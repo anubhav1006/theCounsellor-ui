@@ -10,6 +10,18 @@
       "plugin:@typescript-eslint/eslint-recommended",
       "plugin:@typescript-eslint/recommended",
       "plugin:shopify/esnext",
+      "plugin:react/recommended",
       "prettier"
-    ]
+    ],
+    "rules": {
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": ["error"]
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    },
   }
