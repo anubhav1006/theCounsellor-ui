@@ -1,3 +1,5 @@
+import { KeyboardType } from "react-native";
+
 export interface ChatMessageInterface {
   id: string,
   fromUid: string,
@@ -34,4 +36,26 @@ export interface User {
   contact: number,
   email: string,
   dob: string
+}
+
+export type MainTabNavigatorParamsList = {
+  Home: undefined
+  Profile: undefined
+  Chat: undefined
+}
+
+export interface InputOptionsType {
+  isPassword?: boolean | undefined;
+  type: string,
+  keyboardType?: KeyboardType,
+  placeholder: string,
+  value: string,
+  onChangeText: ((text: string) => void) | undefined,
+  onPress: Function,
+  active: boolean,
+  icon: Element
+}
+
+export interface InputOptionsTypeList {
+  options : InputOptionsType[];
 }

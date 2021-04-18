@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const index = () => {
+const ProfileScreen = () => {
   return (
     <View>
       <Text>Profile Screen</Text>
@@ -9,4 +9,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default ProfileScreen;
